@@ -140,10 +140,16 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array,flavor){
+for (let a = 0; a < array.length; a++) {
+  if (array[a] === flavor) 
+  {array.splice(a,1)}
+}
+return array
 }
 
+console.log(originalFlavors,"Rocky Road")
+console.log(originalFlavors.length)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
