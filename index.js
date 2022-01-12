@@ -148,9 +148,6 @@ for (let a = 0; a < array.length; a++) {
 return array
 }
 
-console.log(originalFlavors,"Rocky Road")
-console.log(originalFlavors.length)
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -172,8 +169,13 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+
+function filterByWord(array, flavor){
+const newarray=[];
+ for (let a = 0; a < array.length; a++) {
+   if (array[a].includes(flavor)) {newarray.push(array[a])}
+ }
+ return newarray
 }
 
 
